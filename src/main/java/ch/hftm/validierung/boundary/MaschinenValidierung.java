@@ -25,9 +25,9 @@ public class MaschinenValidierung {
         if (maschine.getMaschinenNummer() == null
                 || maschine.getMaschinenNummer().isEmpty() && maschine.getMaschinenNummer().startsWith("9007")) {
             maschine.setValid(false);
+        } else {
+            maschine.setValid(true);
         }
-
-        maschine.setValid(true);
 
         return maschine;
     }
